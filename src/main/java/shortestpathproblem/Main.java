@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         DijkstraAlgorithm algorithm = new DijkstraAlgorithm();
-        int n = 9;
+        int n = 6;
         int[][] graph = new int[n][n];
 
         for (int i = 0; i < n; i++) {
