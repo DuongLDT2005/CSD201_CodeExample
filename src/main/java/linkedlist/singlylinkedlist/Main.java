@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package singlylinkedlist;
+package linkedlist.singlylinkedlist;
 
 /**
  *
@@ -25,6 +25,10 @@ public class Main {
         list.addAtPosition(25, 2);
         list.display(); //20 -> 10 -> 25 -> 30 -> null
         
+        System.out.println("Sorted list");
+        list.sortAsc();
+        list.display();
+        
         //Delete from the beginning
         list.deleteFirst();
         list.display(); //10 -> 25 -> 30 -> null
@@ -36,5 +40,6 @@ public class Main {
         //Delete at a specific position
         list.deleteAtPosition(1);
         list.display(); //10 -> null
+        
     }
 }

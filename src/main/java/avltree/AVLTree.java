@@ -39,7 +39,7 @@ public class AVLTree {
             return rotateRight(current);
         }
         if (balanceFactor < -1 && getBalanceFactor(current.right) > 0) {
-            current.right = rotateLeft(current.right);
+            current.right = rotateRight(current.right);
             return rotateLeft(current);
         }
         return current;
